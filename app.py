@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World! This is a simple Flask server.'
 
-@app.route('/',methods=['POST'])
+@app.route('/wh',methods=['POST'])
 def foo():
    data = json.loads(request.data)
    print(data)
